@@ -54,14 +54,14 @@ function formatUserData(userData) {
     },
     
     // Predefined password - Less Secure.
-    "password": "GHA12345",
+    "password": "PASSWORD",
     
     // Generate Random password - More secure
     //"password": Math.random().toString(36),
 
     "changePasswordAtNextLogin": passwordPolicy(grade), // passwordPolicy Returns True or False.
   
-    "user.OrgUnitPath": `/greaterheightsacademy.org/Distance Learning Devices/${gradYear}`,
+    "user.OrgUnitPath": `/exampleorgpath/CHANGEME/${gradYear}`,
   }
 
   console.log(userInfo);
@@ -72,7 +72,7 @@ function formatUserData(userData) {
 // Generates email based on user first name and last name.
 function generateEmail(firstName, lastName) {
   let part1 = `${firstName}.${lastName}`
-  const part2 =  '@greaterheightsacademy.org'
+  const part2 = '@Emaildomain.org'
     for(let i = 2;; i++) { // Loop add/increment number on email until available then return the email.
       let email = part1 + part2; // john.doe@email.com, john.doe2@email.com, ect.
       if(available = emailAvailable(email)) { // If email is available return email, else increment.
