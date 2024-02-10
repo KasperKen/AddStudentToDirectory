@@ -63,8 +63,6 @@ function formatUserData(userData) {
   
     "user.OrgUnitPath": `/exampleorgpath/CHANGEME/${gradYear}`,
   }
-
-  console.log(userInfo);
   return userInfo;
 }
 
